@@ -1,9 +1,10 @@
 vcpkg_from_github(
 	OUT_SOURCE_PATH SOURCE_PATH
-	REPO fraillt/bitsery
-	REF d7876808195834f05fd84619b8f6b266e5c1d5bd
-	SHA512 ac2c6e3907f8ee8cf51070b3c00aab9071586510d8cfe30f9660ed5aa9918cd996c806b1db2b46d464f1d933fc41472e5406e63ba4814bdc37d2b0f1ad6e1083
+	REPO VelocityRa/bitsery
+	REF 7efcf8b6e85c4e887042bd78d2e0891dad25cd30 # kl branch
+	SHA512 0aa378aee247a29011ca1a4bd1fc2559d97f35ed48ea6633cab5cb86ca10970389b8af785272cc7edb97aa7bea0ec1d72034c59c434a4abdd02255c3027affa3
 	HEAD_REF master
+	PATCHES fix-install-paths.patch
 )
 
 vcpkg_configure_cmake(
